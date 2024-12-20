@@ -39,7 +39,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Get the image path
 IMG_PATH = args.image
-print(f"[INFO] Predicting on {IMG_PATH}")
+print(f"{bcolors.OKGREEN} [INFO] Predicting on {IMG_PATH} {bcolors.ENDC}")
 
 # Function to load in the model
 def load_model(filepath=args.model_path):
